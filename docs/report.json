@@ -1,0 +1,52 @@
+{
+  "plant": "TCLab y1<-u1, published first-order OE model (K=0.878, p=0.886, Ts=20 s)",
+  "source": "Rivero-Contreras, Zamarre\u00f1o, Tadeo (2022). Modelado experimental de dos sistemas de laboratorio multivariables. XLIII Jornadas de Autom\u00e1tica, pp. 599-606. doi:10.17979/spudc.9788497498418.0599",
+  "identified_model": {
+    "gain": 0.877,
+    "tau": 166.4,
+    "dead_time": 0.1,
+    "dead_time_for_tuning": 10.1
+  },
+  "relay": {
+    "ku": 19.448,
+    "pu": 40.0
+  },
+  "closed_loop": [
+    {
+      "rule": "SIMC-PI (tau_c=10s)",
+      "kc": 9.413,
+      "ti": 80.6,
+      "td": 0.0,
+      "iae": 545.37,
+      "ise": 2367.15,
+      "overshoot_pct": 13.75,
+      "rise_time": 20.0,
+      "settling_time": 140.0,
+      "total_variation": 172.01
+    },
+    {
+      "rule": "Ziegler-Nichols (open loop)",
+      "kc": 22.592,
+      "ti": 20.2,
+      "td": 5.0,
+      "iae": 953.7,
+      "ise": 2739.22,
+      "overshoot_pct": 25.48,
+      "rise_time": 20.0,
+      "settling_time": null,
+      "total_variation": 878.44
+    },
+    {
+      "rule": "Tyreus-Luyben PI",
+      "kc": 6.078,
+      "ti": 88.0,
+      "td": 0.0,
+      "iae": 570.92,
+      "ise": 2455.54,
+      "overshoot_pct": 12.22,
+      "rise_time": 20.0,
+      "settling_time": 180.0,
+      "total_variation": 112.01
+    }
+  ]
+}
